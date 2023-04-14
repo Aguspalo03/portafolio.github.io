@@ -1,0 +1,126 @@
+#proyectos{
+    background-color: rgb(244, 234, 223)
+}
+#proyectos h4{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.navExperiencia{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imgExperiencia{
+    width: 55%;
+    margin: 10px 10px 25px 20px;
+    ;
+}
+.ulproyectos{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;  
+    margin-right: 20%;
+    margin-bottom: 5%;
+    position: static;
+    
+}
+.ulproyectos h6{
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Raleway';
+    padding-bottom: 10px;
+}
+.ulproyectos p{
+    font-size: 18px;
+    font-family: 'Raleway';
+    color: rgb(63, 63, 63);
+    padding-bottom: 10px;
+}
+.liproyectos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+}
+.liproyectos a{
+    font-size: 16px;
+    font-family: 'Raleway';
+    background-color: rgb(246, 225, 199);
+    padding: 10px;
+    margin-right:30px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    text-decoration: dashed;
+    color: black;
+}
+.liproyectos a:hover{
+    font-family: 'Raleway';
+    background-color: black;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    text-decoration: dashed;
+    color:rgb(246, 225, 199);
+    transition: 0.6s;
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    .imgExperiencia {
+      width: 70%;
+      margin: 10px 0;
+    }
+    .ulproyectos {
+      margin-right: 0;
+      flex-direction: column;
+      align-items: start;
+      margin-left: 2%;
+    }
+    .liproyectos {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+    .liproyectos li{
+        padding-bottom: 30%
+    }
+    .repositorio{
+        padding: 5%;
+    }
+    
+  }
+  @media screen and (max-width: 560px) {
+    h6{
+        font: size 10px;;
+    }
+    .navExperiencia{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgExperiencia {
+      width: 70%;
+      margin: 10px 0;
+    }
+    .ulproyectos {
+      margin-right: 0;
+      flex-direction: column;
+      align-items: start;
+      margin-left: 2%;
+    }
+    .ulproyectos h6{
+        font-size:100%;
+
+    }
+    .liproyectos {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+    .liproyectos a{
+        align-items: center;
+        margin-left: 25%;
+    }
+    
+    
+  }
