@@ -1,0 +1,101 @@
+.presentacion{
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:  rgb(248, 241, 231);
+    padding-bottom: 20px;
+    padding-top: 10px;
+
+}
+.textoPresentacion{
+    width: 50%;
+    margin-top: 40px;
+    
+}
+.parrafoPresentacion{
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navPresentacion{
+    display: flex;
+    list-style: none;
+
+
+}
+.navPresentacion a{
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    text-decoration: dashed;
+    margin-right: 20px; 
+    
+}
+.redesPresentacion{
+    text-decoration: none;
+}
+.redesPresentacion:hover{
+    font-size: 1.7rem;
+    text-decoration: underline;
+    color: rgb(228, 180, 118) ;
+}
+
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 52px;
+}
+
+.imagenPresentacion{
+    width:350px;
+    border-radius: 50%;
+    height: 350px;
+    object-fit: cover;
+    margin-left: 50px;
+
+}
+.imagenPresentacion:hover{
+    width:350px;
+    border-radius: 20%;
+    height: 350px;
+    object-fit: cover;
+    margin-left: 50px;
+    transition: 1s;
+}
+@media (max-width: 1020px){
+    .imagenPresentacion{
+       margin-top: 2%;
+    }
+    .textoPresentacion h2{
+        padding-bottom: 5%;
+    }
+    .presentacion{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navPresentacion li{
+        margin-bottom: 2%;
+    }
+}
+@media (max-width: 480px) {
+        h2{
+        width: 100%;
+        font-size: 45px;
+    }
+    .presentacion{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navPresentacion{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .imagenPresentacion{
+        margin: 0%;
+        padding-top: 2%;
+    }
+    .navPresentacion li{
+        padding-top: 2%;
+    }
+}
